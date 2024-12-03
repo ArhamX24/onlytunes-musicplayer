@@ -1,0 +1,21 @@
+.songcard-body{
+    width: 100%;
+    height: 62%;
+    background-color: #152847;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .songcard-body{
+        display: none;
+    }
+}

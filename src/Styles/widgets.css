@@ -1,0 +1,26 @@
+.widget-body{
+    width: 95%;
+    height: 45%;
+    margin: 3% auto 3%;
+    background-color: #152847;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px; 
+    background: linear-gradient(
+        0deg,
+        rgba(30, 42, 62, 1) 10%,
+        rgba(54, 69, 98, 0.1) 100%
+    );
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    -moz-backdrop-filter: blur(12.5px);
+    -ms-backdrop-filter: blur(12.5px);
+
+
+}
+

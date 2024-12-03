@@ -1,0 +1,122 @@
+.library-body{
+    width: 94%;
+    height: 87%;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.playlist-card{
+    width: 15%;
+    height: 40%;
+    background-color: rgb(30, 42, 62);
+    margin-bottom: 20px;
+    border: 1px solid rgba(54, 69, 98, 0.18);
+    padding: 3%;
+    background: rgb(30, 42, 62);
+    background: linear-gradient(75deg, rgb(40, 58, 88) 0%, rgba(54,69,98,0) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.playlist-card:hover{
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+
+.playlist-img{
+    width: 90%;
+    height: 80%;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.playlist-title{
+    font-weight: 700;
+    font-size: 16px;
+    color: #c4d0e3;
+}
+
+.playlist-subtitle{
+    font-weight: 400;
+    font-size: 12px;
+    color: #c4d0e3;
+}
+
+.play-icon{
+    width: 50px;
+    height: 50px;
+    color: #E99D72;
+}
+
+.playlist-fade{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    width: 100%;
+    height: 34%;
+    background: linear-gradient(180deg, rgb(54,69,98,0) 10%, rgba(54,69,98,1) 100%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.playlist-card:hover .playlist-fade{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px){
+    .playlist-card{
+        width: 40%;
+        height: 30%;
+        margin-bottom: 15px;
+    }
+
+    .playlist-title{
+        font-size: 12px;
+    }
+
+    .playlist-subtitle{
+        font-size: 8px;
+    }
+
+    .play-icon{
+        width: 25px;
+        height: 25px;
+    }
+
+}

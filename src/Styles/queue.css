@@ -1,0 +1,98 @@
+.queue-container{
+    width: 100%;
+    height: 35%;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0 , transparent 0, #172861 40px ), repeating-linear-gradient( #4767d055, #4767d0 );
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2%; */
+    ::-webkit-scrollbar {
+        width: 12px; /* Width of the scrollbar */
+    }
+    
+    /* Style the scrollbar track */
+    ::-webkit-scrollbar-track {
+        background: transparent;
+         /* Color of the track */
+    }
+    
+    /* Style the scrollbar handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the handle */
+        border-radius: 6px;
+        /* display: none; */
+        /* Rounded corners */
+    }
+    
+    /* Style the handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+}
+
+
+.queue{
+    height: 85%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.up-next{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.queue-list{
+    width: 90%;
+    overflow-y: auto;
+}
+
+.queue-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ddd;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.queue-item:hover{
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.queue-item p {
+    margin: 0;
+}
+
+.track-name{
+    width: 80%;
+    text-overflow: ellipsis;
+}
+
+.track-duration{
+
+}
